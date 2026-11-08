@@ -1,3 +1,4 @@
+# Практична робота 1, Завдання 2: розрахунок середньоквадратичного відхилення (SD)
 import numpy as np
 
 well_dept = [56, 12, 66, 19, 32, 72, 27, 32]
@@ -14,7 +15,9 @@ squared_deviations = deviations ** 2
 # Крок 4: середнє значення квадратів відхилень (дисперсія)
 variance = np.mean(squared_deviations)          # 434.5
 
-# Крок 5: квадратний корінь -> SD
+# Крок 5: квадратний корінь з дисперсії -> SD
 SD = np.sqrt(variance)                          # 20.84...
 
-print(average, variance, SD)
+print("Середнє:", average)
+print("Дисперсія:", variance)
+print("SD:", SD)
